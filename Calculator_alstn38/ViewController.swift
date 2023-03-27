@@ -437,7 +437,7 @@ class ViewController: UIViewController {
         if sender.tag == 0 {
             // 버튼 0이 클릭되었을 때 동작할 코드 작성
         } else if sender.tag == 1 {
-            
+            // 버튼 1이 클릭되었을 때 동작할 코드 작성
         } else if sender.tag == 2 {
             
         } else if sender.tag == 3 {
