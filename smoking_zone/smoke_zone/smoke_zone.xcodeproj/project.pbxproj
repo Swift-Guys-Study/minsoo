@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		27EE1A4C7815A6B4D3AE5FDE /* Pods_smoke_zone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E539617DE843D3D4AAFC28 /* Pods_smoke_zone.framework */; };
+		F13FA0502A08E3E00001958D /* MapService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13FA04F2A08E3E00001958D /* MapService.swift */; };
+		F13FA0522A08E47F0001958D /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13FA0512A08E47F0001958D /* NetworkResult.swift */; };
+		F13FA0592A08E56C0001958D /* MapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13FA0582A08E56C0001958D /* MapModel.swift */; };
 		F16A5E802A0104290016D7BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16A5E7F2A0104290016D7BE /* AppDelegate.swift */; };
 		F16A5E822A0104290016D7BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16A5E812A0104290016D7BE /* SceneDelegate.swift */; };
 		F16A5E842A0104290016D7BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16A5E832A0104290016D7BE /* ViewController.swift */; };
@@ -20,6 +23,9 @@
 		79E539617DE843D3D4AAFC28 /* Pods_smoke_zone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_smoke_zone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A976D1CFA3C4F7B035BD4444 /* Pods-smoke_zone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smoke_zone.debug.xcconfig"; path = "Target Support Files/Pods-smoke_zone/Pods-smoke_zone.debug.xcconfig"; sourceTree = "<group>"; };
 		B1CC9535573BD2C89D215ED4 /* Pods-smoke_zone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smoke_zone.release.xcconfig"; path = "Target Support Files/Pods-smoke_zone/Pods-smoke_zone.release.xcconfig"; sourceTree = "<group>"; };
+		F13FA04F2A08E3E00001958D /* MapService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MapService.swift; path = ../../../../../devIOS/Today_Drink_Practice/APIServices/MapService.swift; sourceTree = "<group>"; };
+		F13FA0512A08E47F0001958D /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		F13FA0582A08E56C0001958D /* MapModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModel.swift; sourceTree = "<group>"; };
 		F16A5E7C2A0104290016D7BE /* smoke_zone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = smoke_zone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F16A5E7F2A0104290016D7BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F16A5E812A0104290016D7BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,7 +54,6 @@
 				A976D1CFA3C4F7B035BD4444 /* Pods-smoke_zone.debug.xcconfig */,
 				B1CC9535573BD2C89D215ED4 /* Pods-smoke_zone.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -58,6 +63,23 @@
 				79E539617DE843D3D4AAFC28 /* Pods_smoke_zone.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F13FA04E2A08E3A80001958D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F13FA04F2A08E3E00001958D /* MapService.swift */,
+				F13FA0512A08E47F0001958D /* NetworkResult.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F13FA0572A08E5590001958D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F13FA0582A08E56C0001958D /* MapModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		F16A5E732A0104290016D7BE = {
@@ -81,6 +103,8 @@
 		F16A5E7E2A0104290016D7BE /* smoke_zone */ = {
 			isa = PBXGroup;
 			children = (
+				F13FA0572A08E5590001958D /* Models */,
+				F13FA04E2A08E3A80001958D /* Services */,
 				F16A5E7F2A0104290016D7BE /* AppDelegate.swift */,
 				F16A5E812A0104290016D7BE /* SceneDelegate.swift */,
 				F16A5E832A0104290016D7BE /* ViewController.swift */,
@@ -110,6 +134,8 @@
 			dependencies = (
 			);
 			name = smoke_zone;
+			packageProductDependencies = (
+			);
 			productName = smoke_zone;
 			productReference = F16A5E7C2A0104290016D7BE /* smoke_zone.app */;
 			productType = "com.apple.product-type.application";
@@ -138,6 +164,8 @@
 				Base,
 			);
 			mainGroup = F16A5E732A0104290016D7BE;
+			packageReferences = (
+			);
 			productRefGroup = F16A5E7D2A0104290016D7BE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -208,7 +236,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F16A5E842A0104290016D7BE /* ViewController.swift in Sources */,
+				F13FA0522A08E47F0001958D /* NetworkResult.swift in Sources */,
 				F16A5E802A0104290016D7BE /* AppDelegate.swift in Sources */,
+				F13FA0502A08E3E00001958D /* MapService.swift in Sources */,
+				F13FA0592A08E56C0001958D /* MapModel.swift in Sources */,
 				F16A5E822A0104290016D7BE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

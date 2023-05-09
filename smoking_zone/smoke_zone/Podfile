@@ -7,4 +7,5 @@ target 'smoke_zone' do
 
   # Pods for smoke_zone
   pod 'NMapsMap'
+  pod 'Alamofire'
 end
